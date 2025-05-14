@@ -57,6 +57,10 @@ This project demonstrates how to control an LED connected to an Arduino Uno usin
   - Bluetooth Terminal App (for testing on Android)
   - Serial Terminal like Tera Term (for testing on PC)
 
+## 📱 Android App
+
+![App](https://github.com/user-attachments/assets/ab1d4838-75b4-47f4-b1b2-c3efc8f8ab4e)
+
 ## 🔌 Circuit Connections
 
 ![Board](https://github.com/user-attachments/assets/5a9ce46b-39f1-4563-841f-58b1f309e221)
@@ -96,7 +100,5 @@ void loop() {
   }
 }
 
-## 📱 Android App
 
-![App](https://github.com/user-attachments/assets/ab1d4838-75b4-47f4-b1b2-c3efc8f8ab4e)
 
