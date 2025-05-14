@@ -56,6 +56,7 @@ This project demonstrates how to control an LED connected to an Arduino Uno usin
   - Proteus (for simulation)
   - Bluetooth Terminal App (for testing on Android)
   - Serial Terminal like Tera Term (for testing on PC)
+  - Android Studio for App 
 
 ## 📱 Android App
 
