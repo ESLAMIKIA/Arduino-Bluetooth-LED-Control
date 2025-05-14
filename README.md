@@ -59,6 +59,8 @@ This project demonstrates how to control an LED connected to an Arduino Uno usin
 
 ## 🔌 Circuit Connections
 
+![Board](https://github.com/user-attachments/assets/5a9ce46b-39f1-4563-841f-58b1f309e221)
+
 | Arduino Pin | Connected To      |
 |-------------|-------------------|
 | Pin 8       | LED (+ve terminal)|
@@ -93,3 +95,8 @@ void loop() {
     }
   }
 }
+
+## 📱 Android App
+
+![App](https://github.com/user-attachments/assets/ab1d4838-75b4-47f4-b1b2-c3efc8f8ab4e)
+
