@@ -44,3 +44,52 @@ This project demonstrates how to control an LED connected to an Arduino Uno usin
     Only one device can connect to HC-05 at a time.
 
     For simultaneous multi-device Bluetooth connections, a different module (e.g., HM-10) is required.
+
+## 📷 Project Overview
+
+- **Microcontroller:** Arduino Uno
+- **Bluetooth Module:** HC-05
+- **Output Device:** 1x LED
+- **Control Device:** Android smartphone or PC with Bluetooth
+- **Software Used:**
+  - Arduino IDE (for programming)
+  - Proteus (for simulation)
+  - Bluetooth Terminal App (for testing on Android)
+  - Serial Terminal like Tera Term (for testing on PC)
+
+## 🔌 Circuit Connections
+
+| Arduino Pin | Connected To      |
+|-------------|-------------------|
+| Pin 8       | LED (+ve terminal)|
+| GND         | LED (-ve terminal)|
+| 5V          | HC-05 VCC         |
+| GND         | HC-05 GND         |
+| Pin 0 (RX)  | HC-05 TXD         |
+| Pin 1 (TX)  | HC-05 RXD         |
+
+> ⚠️ Disconnect HC-05 TX/RX wires when uploading code to the Arduino to avoid interference.
+
+## 📟 Arduino Code
+
+```cpp
+char data = 0;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(8, OUTPUT);
+  digitalWrite(8, LOW);
+}
+
+void loop() {
+  if (Serial.available()) {
+    data = Serial.read();
+
+    if (data == '1') {
+      digitalWrite(8, HIGH);  // Turn ON LED
+    }
+    else if (data == '0') {
+      digitalWrite(8, LOW);   // Turn OFF LED
+    }
+  }
+}
